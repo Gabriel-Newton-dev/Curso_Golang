@@ -1,6 +1,11 @@
-Nesse repositório irei dar andamento em um curso de Golando do básico ao Nível avançado. 
+#CURSO DE GOLANG DO BÁSICO AO AVANÇADO
 
-Dentro de cada aula irei colocar o que estaremos estudando. 
 
-Além dos desafios. 
+.Golang é uma linguagem de programação de código aberto criada pelo Google.
+.O seu foco principal é na produtividade, o que é essencial para quem atua 
+com multiplataforma.
+
+.Popularmente chamada de Go, se diferencia das demais linguagens por ser compilada, 
+altamente escalável e que se autodefine como simplista, tendo em vista que facilita
+a criação de softwares simples, confiáveis e eficientes.
 
