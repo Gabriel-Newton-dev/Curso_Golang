@@ -33,3 +33,5 @@ func funcao2(y []int) int {
 	return total
 
 }
+
+// teste
