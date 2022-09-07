@@ -18,3 +18,6 @@ func main() {
 	fmt.Println(xs)
 
 }
+
+// comando sort.ints() para organizar a int 
+// sort.strings() para organizar a string
