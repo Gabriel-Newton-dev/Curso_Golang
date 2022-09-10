@@ -23,7 +23,7 @@ func main() {
 	fmt.Println(usuario["nome"])
 	delete(usuario, "sobrenome") // com delete excluímos aquele determinado sobrenome
 
-	// irei fazer agora um um map de setring que retorna um outra map
+	// irei fazer agora um um map de string que retorna um outra map
 	usuario2 := map[string]map[string]string{
 		"nome": {
 			"primeiro": "Gabriel",
@@ -35,7 +35,6 @@ func main() {
 		},
 	}
 
-	fmt.Println(usuario2)
 	fmt.Println(usuario2)
 
 	usuario2["signo"] = map[string]string{
