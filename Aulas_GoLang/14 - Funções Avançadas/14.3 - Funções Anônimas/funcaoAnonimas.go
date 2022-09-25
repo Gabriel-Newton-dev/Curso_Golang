@@ -12,7 +12,7 @@ func main() {
 
 	anonima := func(palavra string) string {
 		return fmt.Sprintf("No caso em tela fizemos uma : %s", palavra)
-	}("Funcao anônima")
+	}("Função anônima")
 
 	fmt.Println(anonima)
 
