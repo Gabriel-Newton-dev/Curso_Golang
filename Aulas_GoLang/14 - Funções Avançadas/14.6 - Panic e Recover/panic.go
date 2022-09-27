@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func recuperarExecucao() {
-	if r := recover(); r != nil {
+	if erro := recover(); erro != nil {
 		fmt.Println("Execução recuperada com sucesso!")
 	}
 }
