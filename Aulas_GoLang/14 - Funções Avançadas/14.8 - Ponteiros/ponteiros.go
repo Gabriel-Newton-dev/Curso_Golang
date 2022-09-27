@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func inverterSinal(numero int) int {
-	return numero * -1
+func inverterSinal(x int) int {
+	return x * -1 // aqui coloquei ponteiro para inverter o sinal do int
 }
 
-func inverterSinalComPonteiro(numero *int) {
-	*numero = *numero * -1
+func inverterSinalComPonteiro(y *int) { // podemos fazer dessa forma tb.
+	*y = *y * -1
 }
 
 func main() {
