@@ -23,6 +23,7 @@ type carro struct {
 	consumo  int
 }
 
+// interface slice carro
 type ordenarPorPotencia []carro
 
 func (x ordenarPorPotencia) Len() int           { return len(x) }
