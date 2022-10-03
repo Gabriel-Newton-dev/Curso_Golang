@@ -25,4 +25,8 @@ func main() {
 	PS5.salvar()
 	PS5.desconto()
 
+	Nintendo := consoles{"Nintendo", "Switch", 3487, false}
+	Nintendo.salvar()
+	Nintendo.desconto()
+
 }
