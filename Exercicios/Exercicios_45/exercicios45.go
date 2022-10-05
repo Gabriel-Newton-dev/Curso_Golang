@@ -17,7 +17,7 @@ type User struct {
 
 func main() {
 
-	u1 := User{"James", 32}
+	u1 := User{"James", 35}
 
 	u2 := User{"Moneypenny", 27}
 
