@@ -22,6 +22,9 @@ func main() {
 
 	var resultado jsontogo
 
+	// formato do Unmarshall, declara o erro, chama a função json.Unmarshal recebendo um slice de byte do
+	//json que no caso em tela é o s, e cria uma variavel para referenciar a struct que no caso é resultado, então usa um &
+
 	err := json.Unmarshal([]byte(s), &resultado)
 	if err != nil {
 		fmt.Println("deu zica mano!", err)
