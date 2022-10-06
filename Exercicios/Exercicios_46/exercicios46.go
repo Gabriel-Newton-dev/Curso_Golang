@@ -31,7 +31,7 @@ func main() {
 	}
 
 	fmt.Println(resultado)
-	fmt.Println(resultado[1])
-	fmt.Println(resultado[1].Last)
+	fmt.Println(resultado[1])      // selecionei um valor, ou seja, só irá printar o primeiro
+	fmt.Println(resultado[1].Last) // além do valor está selecionado apenas o Last
 
 }
