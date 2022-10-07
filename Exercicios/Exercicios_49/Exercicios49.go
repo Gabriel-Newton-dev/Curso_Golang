@@ -16,6 +16,18 @@ type user struct {
 	Sayings []string
 }
 
+type porIdade []user
+
+func (p porIdade) Len() int           { return len(p) }
+func (p porIdade) Less(i, j int) bool { return p[i].Age < p[j].Age }
+func (p porIdade) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
+
+type porSobrenome []user
+
+func (p porSobrenome) Len() int           { return len(p) }
+func (p porSobrenome) Less(i, j int) bool { return p[i].Last < p[j].Last }
+func (p porSobrenome) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
+
 func main() {
 	u1 := user{
 		First: "James",
@@ -52,8 +64,27 @@ func main() {
 
 	users := []user{u1, u2, u3}
 
-	fmt.Println(users)
+	for _, v := range users {
+		sort.Strings(v.Sayings)
+	}
 
-	sort.Strings([]users)
+	sort.Sort(porIdade(users))
+	fmt.Println("Ordenado por idade:\n")
+	harmoniosa(users)
 
+	sort.Sort(porSobrenome(users))
+	fmt.Println("Ordenado por sobrenome:\n")
+	harmoniosa(users)
+
+}
+
+func harmoniosa(x []user) {
+	for i, v := range x {
+		fmt.Println(i, "\tIdade:", v.Age, "\tNome completo:", v.First, v.Last, "\n")
+		for _, c := range v.Sayings {
+			fmt.Println("\t", c)
+		}
+		fmt.Println("\n")
+
+	}
 }
