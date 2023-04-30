@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 type Person struct {
 	Name string
@@ -31,6 +34,19 @@ func main() {
 		{"Gisele", 39},
 		{"Hulk", 40},
 	}
+
+	carros := []string{"Vectra", "Cruze", "Omega"}
+	fmt.Println(carros)
 	fmt.Println(people)
+
+	sort.Strings(carros)
+	fmt.Println(carros)
+
+	// para fazer um sort em int
+
+	si := []int{50, 70, 20, 10, 30, 40, 60}
+	fmt.Println(si)
+	sort.Ints(si) // para ordenar os inteiros do menor para o maior
+	fmt.Println(si)
 
 }
