@@ -1,0 +1,21 @@
+// A empresa GÁS TOTAL paga uma gratificação de R$ 237,50 a todos os seus funcionários. Escreva um programa Go
+//que pede o salário do funcionário e gera o novo salário com a gratificação.
+// As variáveis que representam a gratificação, o salário atual e o novo salário deverão ser do tipo float ou double.
+
+package main
+
+import "fmt"
+
+var salario float64
+
+func main() {
+
+	novoSalario := 237.50
+
+	fmt.Print("Digite o seu salário por favor: ")
+	fmt.Scan(&salario)
+
+	resultado := salario + novoSalario
+	fmt.Printf("O seu salário + bonificação fica R$ %v Reais", resultado)
+
+}
