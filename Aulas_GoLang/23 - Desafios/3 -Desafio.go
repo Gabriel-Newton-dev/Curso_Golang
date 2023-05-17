@@ -10,6 +10,16 @@
 
 package main
 
+import "fmt"
+
+var grauCelcius float64
+
 func main() {
+
+	fmt.Print("Entre com a temperatura em Graus Celcius: ")
+	fmt.Scan(&grauCelcius)
+
+	f := ((grauCelcius * 9) / 5) + 32
+	fmt.Printf("%v graus Celcius é igual à %v graus Fahrenheit.\n", grauCelcius, f)
 
 }
