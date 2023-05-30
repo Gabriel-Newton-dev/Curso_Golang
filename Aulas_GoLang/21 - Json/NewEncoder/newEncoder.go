@@ -56,19 +56,10 @@ func main() {
 
 	// precisamos de um NewEncoder para ai sim usar o encoder
 
-	// funcNewEncoder := json.NewEncoder(os.Stdout)
+	funcNewEncoder := json.NewEncoder(os.Stdout)
 
-	// err := funcNewEncoder.Encode(users)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
-
-	// - Desafio: descubra o que é, e utilize, method chaining para conectar os dois métodos acima.
-	// basicamente vc usa um retorno de um metodo, para utilizar em outro, ex:
-
-	err := json.NewEncoder(os.Stdout).Encode(users)
+	err := funcNewEncoder.Encode(users)
 	if err != nil {
 		fmt.Println(err)
 	}
-
 }

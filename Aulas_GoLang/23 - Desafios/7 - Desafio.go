@@ -1,5 +1,5 @@
 // Crie um array de strings na linguagem Golang
-// e use o laço for para acessar seus elementos de forma individual.
+// e use o laço for para acessar seus elementos de forma individual e ordenados.
 // Use função len(), para retornar a quantidade de itens no array.
 
 package main
