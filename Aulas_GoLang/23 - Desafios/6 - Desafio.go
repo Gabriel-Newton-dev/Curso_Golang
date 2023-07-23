@@ -23,5 +23,4 @@ func main() {
 
 	areaDoLosango := medida1 * medida2 / 2
 	fmt.Printf("A área desse losango é de : %d \n", areaDoLosango)
-
 }
